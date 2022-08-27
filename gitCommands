@@ -1,0 +1,42 @@
+git config --global user.name "your_username"
+git config --global user.email "your_email"
+
+git init                       // Initialize empty git repository
+git status                     // Check status of files in git repo
+
+git add --a                    // Add all files to staging area
+
+git commit -m "commit_message"       // To commit changes (capture snapshot)
+git log                              // View all commits history
+
+
+// To create new repository on command line
+
+echo "# Repository-Name" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/satwikverma/Strivers-A2Z-DSA.git
+git push -u origin main
+
+
+// To push existing repository from command line
+
+git remote add origin https://github.com/satwikverma/Strivers-A2Z-DSA.git                // creating a remote
+git branch -M main
+git push -u origin main                                                                  // pushing to the remote repository
+
+Note :
+Before pushing the changes to remote repository, we need access / permission to do so and we can do that by using SSH keys.
+
+Step-1 : Create new SSH key
+
+-> Search "ssh keys github on google"
+-> Open first link
+-> Follow steps to add
+
+Step-2 : Add the SSH key to your account
+
+-> Open link in above link's point number 3 .
+-> Follow steps to add that SSH key to your github account
